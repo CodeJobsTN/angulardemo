@@ -1,0 +1,8 @@
+<app-header [title]="'My account'" [username]="'Admin'" [greetingMessage]="greetingMessage" ></app-header>
+
+<h1 style="text-align: center;"></h1>
+<div class="form-group" style="display: flex; width: 50%; margin: 20px">
+  <input type="text" class="form-control me-2 " id="inputEmail3" placeholder="Greeting message"
+   [(ngModel)]="greetingMessage" name="message" >
+   <button type="submit" class="btn btn-outline-dark" on-click="validate()" >Validate</button>
+</div>
